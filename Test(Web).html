@@ -12,11 +12,11 @@
     <button onclick="number2()">2</button>
     <br>
     <br>
-    <h4>Operator (WIP)</h4>
+    <h4>Operator</h4>
     <button onclick="sum()">+</button>
     <button onclick="sub()">-</button>
-    <button></button>
-    <button></button>
+    <button onclick="multi()">*</button>
+    <button onclick="div()">/</button>
     <br>
     <br>
     <h4>Extras</h4>
@@ -33,6 +33,10 @@
             document.getElementById("cal").innerHTML = num1 + num2;
         }else if(mode == 4,op == "-"){
             document.getElementById("cal").innerHTML = num1 - num2;
+        }else if(mode == 4,op == "*"){
+            document.getElementById("cal").innerHTML = num1 * num2;
+        }else if(mode == 4,op == "/"){
+            document.getElementById("cal").innerHTML = num1 / num2;
         }
     }
     function number1(){
@@ -88,9 +92,26 @@
             mode = 3;
         }
     }
+    function multi(){
+        if(mode == 2){
+            op = "*";
+            mode = "3";
+        }
+    }
+    function div(){
+        if (mode == 2){
+            op = "/";
+            mode = "3";
+        }
+    }
 </script>
 <!--My Style!-->
 <style>
+    p{
+        font-family: monospace;
+        font-size: medium;
+        font-style: italic;
+    }
     h4{
         font-family: sans-serif;
     }
