@@ -4,4 +4,4 @@
 ### What this is???
  This a calauator, man. This simple , its esay to use this calulator
  #### Changelog
- > Launch :) 
+ > Launch :) Alpha Version!
