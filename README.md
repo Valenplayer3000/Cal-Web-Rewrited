@@ -4,6 +4,8 @@
 ### What this is???
  This a calculator, man. This simple , its easy to use this calculator
  #### Changelog
+##### 0.3.1
+> Terminal Stlye
 ##### 0.3
 > New amination and warpper!
 ##### 0.2
