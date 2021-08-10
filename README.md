@@ -1,8 +1,8 @@
 ![Logo](logo.png)
 # Math.js
- A new, simple, easy to use caluator!
+ A new, simple, easy to use cacluator!
 ### What this is???
- This a calaculator, man. This simple , its easy to use this calulator
+ This a calculator, man. This simple , its easy to use this calculator
  #### Changelog
 ##### 0.3
 > New amination and warpper!
