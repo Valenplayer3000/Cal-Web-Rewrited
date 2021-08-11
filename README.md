@@ -1,4 +1,4 @@
-![Logo](logo.png)
+![Logo](Math.js.png)
 # Math.js
  A new, simple, easy to use cacluator!
 ### What this is???
