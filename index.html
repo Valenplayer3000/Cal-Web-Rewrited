@@ -43,16 +43,32 @@
     var num1 = "";
     var num2 = "";
     function mode1(){
-        mode = 1;
+        if (mode == 1) {
+            alert("Unable to enter mode 1!");
+        } else {
+            mode =  1;
+        }
     }
     function mode2(){
-        mode = 2;
+        if (mode == 1) {
+            alert("Unable to enter mode 2!");
+        } else {
+            mode = 2;
+        }
     }
     function mode3(){
-        mode = 3;
+        if (mode == 1) {
+            alert("Unable to enter mode 3!");
+        } else {
+            mode = 3;
+        }
     }
     function mode4(){
-        mode = 4;
+        if (mode == 1) {
+            alert("Unable to enter mode 4!");
+        } else {
+            mode = 4;
+        }
     }
     function result(){
         if (mode == 4,op == "+"){
