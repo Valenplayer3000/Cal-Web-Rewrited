@@ -32,6 +32,8 @@
     <br>
     <h4>Extras</h4>
     <button onclick="clr()">Clear</button>  <button><a href="about.html">About</a></button>
+    <h4>Advanced</h4>
+    <button>Mode 1</button> <button>Mode 2</button> <button>Mode 3</button> <button>Mode 4</button>
 </div>
 </html>
 <!--My Script!-->
@@ -40,6 +42,18 @@
     var mode = 1;
     var num1 = "";
     var num2 = "";
+    function mode1() {
+        mode = 1;
+    }
+    function mode2() {
+        mode = 2;
+    }
+    function mode3() {
+        mode = 3;
+    }
+    function mode4{
+        mode = 4;
+    }
     function result(){
         if (mode == 4,op == "+"){
             document.getElementById("cal").innerHTML = num1 + num2;
@@ -204,7 +218,6 @@
         font-family: monospace;
         border: none;
         border-radius: 3px;
-        box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
 
     }
     .warpper{
