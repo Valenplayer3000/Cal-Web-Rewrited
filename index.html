@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <html>
+    <title>Math.js (Dev)</title>
 <div class="warpper">
     <h3>Math JS</h3>
     <p id = "cal">Put the number here! ~Heavy</p>
@@ -36,6 +37,8 @@
     <br>
     <h4>Extras</h4>
     <button onclick="clr()">Clear</button>  <button><a href="about.html">About</a></button>
+    <h4>Advanced</h4>
+    <button onclick="mode1()">Mode 1</button> <button onclikc="mode2()">Mode 2</button> <button onclick="mode3()">Mode 3</button> <button onclick="mode4()">Mode 4</button>
 </div>
 </html>
 <!--My Script!-->
@@ -44,6 +47,34 @@
     var mode = 1;
     var num1 = "";
     var num2 = "";
+    function mode1(){
+        if (mode == 1) {
+            alert("Unable to enter mode 1!");
+        } else {
+            mode =  1;
+        }
+    }
+    function mode2(){
+        if (mode == 2) {
+            alert("Unable to enter mode 2!");
+        } else {
+            mode = 2;
+        }
+    }
+    function mode3(){
+        if (mode == 3) {
+            alert("Unable to enter mode 3!");
+        } else {
+            mode = 3;
+        }
+    }
+    function mode4(){
+        if (mode == 4) {
+            alert("Unable to enter mode 4!");
+        } else {
+            mode = 4;
+        }
+    }
     function result(){
         if (mode == 4,op == "+"){
             document.getElementById("cal").innerHTML = num1 + num2;
