@@ -9,36 +9,34 @@
     <title>Math.js (Dev)</title>
 <div class="warpper">
     <h3>Math JS</h3>
-    <p id = "cal">Put the number here! ~Heavy</p>
+    <p id = "cal">Null</p>
     <br>
-    <h4>Result Button (Click Here when are ready!)</h4>
-    <button onclick="result()">=</button>
+    <h4>The Result Button</h4>
+    <button aria-label="Yes I said that button on top, and yes I not wanna mess it up" class="text-button" onclick="result()">=</button>
     <br>
     <br>
     <h4>Number</h4>
-    <button onclick="number1()">1</button>
-    <button onclick="number2()">2</button>
-    <button onclick="number3()">3</button>
-    <button onclick="number4()">4</button>
-    <button onclick="number5()">5</button>
-    <button onclick="number6()">6</button>
-    <button onclick="number7()">7</button>
-    <button onclick="number8()">8</button>
-    <button onclick="number9()">9</button>
-    <button onclick="number0()">0</button>
+    <button class="text-button" onclick="number1()">1</button>
+    <button class="text-button" onclick="number2()">2</button>
+    <button class="text-button" onclick="number3()">3</button>
+    <button class="text-button" onclick="number4()">4</button>
+    <button class="text-button" onclick="number5()">5</button>
+    <button class="text-button" onclick="number6()">6</button>
+    <button class="text-button" onclick="number7()">7</button>
+    <button class="text-button" onclick="number8()">8</button>
+    <button class="text-button" onclick="number9()">9</button>
+    <button class="text-button" onclick="number0()">0</button>
     <br>
     <br>
     <h4>Operator</h4>
-    <button onclick="sum()">+</button>
-    <button onclick="sub()">-</button>
-    <button onclick="multi()">*</button>
-    <button onclick="div()">/</button>
+    <button class="text-button" onclick="sum()">+</button>
+    <button class="text-button" onclick="sub()">-</button>
+    <button class="text-button" onclick="multi()">*</button>
+    <button class="text-button" onclick="div()">/</button>
     <br>
     <br>
     <h4>Extras</h4>
-    <button onclick="clr()">Clear</button>  <button><a href="about.html">About</a></button>
-    <h4>Advanced</h4>
-    <button onclick="mode1()">Mode 1</button> <button onclikc="mode2()">Mode 2</button> <button onclick="mode3()">Mode 3</button> <button onclick="mode4()">Mode 4</button>
+    <button class="text-button" onclick="clr()">Clear</button>  <button><a href="about.html">About</a></button>
 </div>
 </html>
 <!--My Script!-->
@@ -46,35 +44,7 @@
     var op = "";
     var mode = 1;
     var num1 = "";
-    var num2 = "";
-    function mode1(){
-        if (mode == 1) {
-            alert("Unable to enter mode 1!");
-        } else {
-            mode =  1;
-        }
-    }
-    function mode2(){
-        if (mode == 2) {
-            alert("Unable to enter mode 2!");
-        } else {
-            mode = 2;
-        }
-    }
-    function mode3(){
-        if (mode == 3) {
-            alert("Unable to enter mode 3!");
-        } else {
-            mode = 3;
-        }
-    }
-    function mode4(){
-        if (mode == 4) {
-            alert("Unable to enter mode 4!");
-        } else {
-            mode = 4;
-        }
-    }
+    var num2 = "";   
     function result(){
         if (mode == 4,op == "+"){
             document.getElementById("cal").innerHTML = num1 + num2;
@@ -84,6 +54,12 @@
             document.getElementById("cal").innerHTML = num1 * num2;
         }else if(mode == 4,op == "/"){
             document.getElementById("cal").innerHTML = num1 / num2;
+        }else if(mode == 1){
+            alert("Please tpye the number :(");
+        }else if (mode == 2){
+            alert("Please tpye the operator :/");
+        }else if (mode == 3){
+            alert("Select this that number stop pressing this button! >:(");
         }
     }
     function number1(){
@@ -228,10 +204,12 @@
 <style>
     body{
         background-color:rgb(253, 253, 253);
+        text-align: center;
     }
     p{
         font-family: 'Inter';
-        font-size: medium;
+        font-size: 30px;
+        font-weight: bold;
         text-align: center;
         
     }
@@ -249,9 +227,16 @@
         border-radius: 2px;
 
     }
+    .text-button{
+        font-family: 'Inter';
+    }
+    .text-button:hover{
+        transition: all 300ms cubic-bezier(0,0,0,1);
+        font-weight: 700;
+    }
     .warpper{
             width: 1000px;
-            height: 500px;
+            height: 550px;
             position: absolute;
             top: 50%;
             left: 50%;
