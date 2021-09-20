@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <head>
     <!--We connect the Inter font for make the web look better now-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -6,19 +6,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <html>
-    <title>Math.js (Dev)</title>
+<title>数学 JS (Dev)</title>
     <ul>
-        <li><a class="link" href="https://perezbueno.xyz">Go Back</a></li>
+        <li><a class="link" href="https://perezbueno.xyz">戻ってください</a></li>
     </ul>
 <div class="warpper">
-    <h3>Math JS</h3>
-    <p id = "cal">0</p>
+    <h3>数学 JS</h3>
+    <p id="cal">ヌル</p>
     <br>
-    <h4>The Result Button</h4>
+    <h4>結果ボタン</h4>
     <button aria-label="Yes I said that button on top, and yes I not wanna mess it up" class="text-button" onclick="result()">=</button>
     <br>
     <br>
-    <h4>Number</h4>
+    <h4>数</h4>
     <button class="text-button" onclick="number1()">1</button>
     <button class="text-button" onclick="number2()">2</button>
     <button class="text-button" onclick="number3()">3</button>
@@ -30,16 +30,14 @@
     <button class="text-button" onclick="number9()">9</button>
     <button class="text-button" onclick="number0()">0</button>
     <br>
-    <br>
-    <h4>Operator</h4>
+    <h4>演算子</h4>
     <button class="text-button" onclick="sum()">+</button>
     <button class="text-button" onclick="sub()">-</button>
     <button class="text-button" onclick="multi()">*</button>
     <button class="text-button" onclick="div()">/</button>
     <br>
-    <br>
-    <h4>Extras</h4>
-    <button class="text-button" onclick="clr()">Clear</button>  <button><a href="about.html">About</a></button>
+    <h4>エキストラ</h4>
+    <button class="text-button" onclick="clr()">クリア</button>  <button><a href="about-japan.html">に関しては</a></button>
 </div>
 </html>
 <!--My Script!-->
@@ -98,7 +96,7 @@
             num1 = 4;
         }else if (mode == 3){
             mode = 4;
-            num2 = 4;
+            num2 = 4
         }
     }
     function number5(){
@@ -107,7 +105,7 @@
             num1 = 5;
         }else if (mode = 3){
             mode = 4;
-            num2 = 5
+            num2 = 5 
         }
     }
     function number6(){
@@ -214,21 +212,17 @@
         background-color: #333;
         overflow: hidden;
         border-radius: 0px;
-        height: 50px;
+}
 }
 
 li a:hover {
     transition: all 500ms cubic-bezier(0,0,0,1) ; 
+    background-color: #111;
+    border-radius: 0px;
 }
 li {
     float: left;
     border-radius: 0px;
-    margin-top:1%;
-    margin-left: 1%;
-}
-li:hover{
-    transition: all 500ms cubic-bezier(0,0,0,1);
-    font-weight:700;
 }
     body{
         background-color:rgb(253, 253, 253);
@@ -239,10 +233,7 @@ li:hover{
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        border:solid 2px #000000 ;
-        height:50px;
-        width: 100px;
-        margin-left: 45%;
+        
     }
     h4{
         font-family: 'Inter';
@@ -262,14 +253,12 @@ li:hover{
         font-family: 'Inter';
     }
     .text-button:hover{
-        transition: all 500ms cubic-bezier(0,0,0,1);
+        transition: all 300ms cubic-bezier(0,0,0,1);
         font-weight: 700;
-        background-color: #808080;
-        color:white;
     }
     .warpper{
             width: 1000px;
-            height: 560px;
+            height: 550px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -277,6 +266,9 @@ li:hover{
             background-color:rgb(201, 201, 201);
             overflow: hidden;
             border-radius: 5px;
+            animation-name: createBox;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(0.53, 0.02, 0.1, 1);
         }
         a{
             text-decoration: none;
@@ -287,5 +279,9 @@ li:hover{
             text-decoration: none;
             color: white;
             font-family: 'Inter';
+        }
+        a:hover{
+            font-weight: 700;
+            transition: all 500ms cubic-bezier(0,0,0,1);
         }
 </style>
