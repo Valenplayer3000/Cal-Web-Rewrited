@@ -1,5 +1,11 @@
 ﻿<!DOCTYPE html>
 <head>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
     <!--We connect the Inter font for make the web look better now-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,8 +15,9 @@
 <title>数学 JS (Dev)</title>
     <ul>
         <li><a class="link" href="https://perezbueno.xyz">戻ってください</a></li>
+        <li><p>Perezbueno.xyz にリンク</p></li>
     </ul>
-<div class="warpper">
+<div class="uk-card">
     <h3>数学 JS</h3>
     <p id="cal">ヌル</p>
     <br>
@@ -19,25 +26,25 @@
     <br>
     <br>
     <h4>数</h4>
-    <button class="text-button" onclick="number1()">1</button>
-    <button class="text-button" onclick="number2()">2</button>
-    <button class="text-button" onclick="number3()">3</button>
-    <button class="text-button" onclick="number4()">4</button>
-    <button class="text-button" onclick="number5()">5</button>
-    <button class="text-button" onclick="number6()">6</button>
-    <button class="text-button" onclick="number7()">7</button>
-    <button class="text-button" onclick="number8()">8</button>
-    <button class="text-button" onclick="number9()">9</button>
-    <button class="text-button" onclick="number0()">0</button>
+    <button class="uk-button-default text-button" onclick="number1()">1</button>
+    <button class="uk-button-default text-button" onclick="number2()">2</button>
+    <button class="uk-button-default text-button" onclick="number3()">3</button>
+    <button class="uk-button-default text-button" onclick="number4()">4</button>
+    <button class="uk-button-default text-button" onclick="number5()">5</button>
+    <button class="uk-button-default text-button" onclick="number6()">6</button>
+    <button class="uk-button-default text-button" onclick="number7()">7</button>
+    <button class="uk-button-default text-button" onclick="number8()">8</button>
+    <button class="uk-button-default text-button" onclick="number9()">9</button>
+    <button class="uk-button-default text-button" onclick="number0()">0</button>
     <br>
     <h4>演算子</h4>
-    <button class="text-button" onclick="sum()">+</button>
-    <button class="text-button" onclick="sub()">-</button>
-    <button class="text-button" onclick="multi()">*</button>
-    <button class="text-button" onclick="div()">/</button>
+    <button class="uk-button-default text-button" onclick="sum()">+</button>
+    <button class="uk-button-default text-button" onclick="sub()">-</button>
+    <button class="uk-button-default text-button" onclick="multi()">*</button>
+    <button class="uk-button-default text-button" onclick="div()">/</button>
     <br>
     <h4>エキストラ</h4>
-    <button class="text-button" onclick="clr()">クリア</button>  <button><a href="about-japan.html">に関しては</a></button>
+    <button class="uk-button-default text-button" onclick="clr()">クリア</button>  <button><a href="about-japan.html">に関しては</a></button>
 </div>
 </html>
 <!--My Script!-->
@@ -209,31 +216,35 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        background-color: #333;
         overflow: hidden;
         border-radius: 0px;
-}
+        height: 50px;
 }
 
 li a:hover {
     transition: all 500ms cubic-bezier(0,0,0,1) ; 
-    background-color: #111;
-    border-radius: 0px;
+}
+.webtitle{
+    margin-left: 100%%;
 }
 li {
     float: left;
     border-radius: 0px;
+    margin-top:1%;
+    margin-left: 1%;
 }
     body{
         background-color:rgb(253, 253, 253);
         text-align: center;
     }
-    p{
+    .calc{
         font-family: 'Inter';
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        
+        height:50px;
+        width: 100px;
+        margin-left: 47%;
     }
     h4{
         font-family: 'Inter';
@@ -244,44 +255,6 @@ li {
         text-align: center;
     }
     button{
-        font-family: 'Inter';
-        border: none;
-        border-radius: 2px;
-
+        border:none ;
     }
-    .text-button{
-        font-family: 'Inter';
-    }
-    .text-button:hover{
-        transition: all 300ms cubic-bezier(0,0,0,1);
-        font-weight: 700;
-    }
-    .warpper{
-            width: 1000px;
-            height: 550px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color:rgb(201, 201, 201);
-            overflow: hidden;
-            border-radius: 5px;
-            animation-name: createBox;
-            animation-duration: 1.5s;
-            animation-timing-function: cubic-bezier(0.53, 0.02, 0.1, 1);
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            font-family: 'Inter';
-        }
-        .link{
-            text-decoration: none;
-            color: white;
-            font-family: 'Inter';
-        }
-        a:hover{
-            font-weight: 700;
-            transition: all 500ms cubic-bezier(0,0,0,1);
-        }
 </style>
