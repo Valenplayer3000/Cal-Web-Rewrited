@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
@@ -12,20 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <html>
-<title>数学 JS (Dev)</title>
+    <title>Math.js (Dev)</title>
     <ul>
-        <li><a class="link" href="https://perezbueno.xyz">戻ってください</a></li>
-        <li><p>Perezbueno.xyz にリンク</p></li>
+        <li><a class="link" href="https://perezbueno.xyz">Go Back</a></li>
+        <li><p class="webtitle">Linked to Perezbueno.xyz</p></li>
     </ul>
-<div class="uk-card">
-    <h3>数学 JS</h3>
-    <p id="cal">ヌル</p>
+<div class="uk-crad-primary">
+    <h3>Math JS</h3>
+    <h3 id = "cal">0</h3>
     <br>
-    <h4>結果ボタン</h4>
-    <button aria-label="Yes I said that button on top, and yes I not wanna mess it up" class="uk-button-default text-button" onclick="result()">=</button>
+    <h4>El boton de resultado</h4>
+    <button class="uk-button-default text-button" onclick="result()">=</button>
     <br>
     <br>
-    <h4>数</h4>
+    <h4>Numeros</h4>
     <button class="uk-button-default text-button" onclick="number1()">1</button>
     <button class="uk-button-default text-button" onclick="number2()">2</button>
     <button class="uk-button-default text-button" onclick="number3()">3</button>
@@ -37,14 +37,16 @@
     <button class="uk-button-default text-button" onclick="number9()">9</button>
     <button class="uk-button-default text-button" onclick="number0()">0</button>
     <br>
-    <h4>演算子</h4>
+    <br>
+    <h4>Operadores</h4>
     <button class="uk-button-default text-button" onclick="sum()">+</button>
     <button class="uk-button-default text-button" onclick="sub()">-</button>
     <button class="uk-button-default text-button" onclick="multi()">*</button>
     <button class="uk-button-default text-button" onclick="div()">/</button>
     <br>
-    <h4>エキストラ</h4>
-    <button class="uk-button-default text-button" onclick="clr()">クリア</button>  <button><a href="about-japan.html">に関しては</a></button>
+    <br>
+    <h4>Extras</h4>
+    <button class="uk-button-default text-button" onclick="clr()">Limpiar</button>  <button><a href="about.html">Acerca de</a></button>
 </div>
 </html>
 <!--My Script!-->
@@ -103,7 +105,7 @@
             num1 = 4;
         }else if (mode == 3){
             mode = 4;
-            num2 = 4
+            num2 = 4;
         }
     }
     function number5(){
@@ -112,7 +114,7 @@
             num1 = 5;
         }else if (mode = 3){
             mode = 4;
-            num2 = 5 
+            num2 = 5
         }
     }
     function number6(){
@@ -208,6 +210,7 @@
         }
     }
 </script>
+<script src="connCheck.js"></script>
 <!--My Style!-->
 <style>
     ul {
