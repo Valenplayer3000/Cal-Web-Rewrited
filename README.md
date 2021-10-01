@@ -1,9 +1,10 @@
-![Logo](Math.js.png)
-# Math.js
- A new, simple, easy to use cacluator!
-### What this is???
- This a calculator, man. This simple , its easy to use this calculator
+![Logo](new-brand.png)
+# Opencalc
+ A new, simple, easy to use cacluator
  #### Changelog
+##### 0.6
+> New About page
+> Using the Connection Check form perezbueno.xyz on Beta
 ##### 0.3.1
 > Terminal Stlye
 ##### 0.3
