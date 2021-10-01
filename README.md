@@ -1,4 +1,4 @@
-![Logo](Frame 7png)
+![Logo](Frame 7.png)
 # Opencalc
  A new, simple, easy to use cacluator
  #### Changelog
