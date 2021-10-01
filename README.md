@@ -1,4 +1,4 @@
-![Logo](Math.js.png)
+![Logo](Frame 7png)
 # Opencalc
  A new, simple, easy to use cacluator
  #### Changelog
