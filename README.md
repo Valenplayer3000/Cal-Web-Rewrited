@@ -1,4 +1,4 @@
-![Logo](Frame 7.png)
+![Logo](new-brand.png)
 # Opencalc
  A new, simple, easy to use cacluator
  #### Changelog
