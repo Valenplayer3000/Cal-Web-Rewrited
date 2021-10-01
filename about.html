@@ -42,23 +42,58 @@
     }
     </style>
     <body>
-        <div class="uk-card">
-            <h1>About Math.js</h1> <h3>Version Dev (0.5) UIkit version (3.7.3)</h3>
-            <p>This is why i gonna making this about page because i forgot that.</p>
+    <div uk-sticky>
+        <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li> <a href="index.html" class="uk-navbar-item uk-logo">Math.js</a></li>
+        </ul>
+    </div>
+</nav>
+    </div>
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('background/background-image.png');">
 
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">About Math.js</h1>
+    </div>
             <br>
-            <p>The math.js are made using with HTML, JavaScript and ₗᵢₜₜₗₑ CSS</p>
             <br>
-            <button><a href="index.html">Back</a></button>
-            <br>
+            <h3>Changelog</h3>
+            <div class="uk-child-width-1-2@m" uk-grid>
+           <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+         <div class="uk-card uk-card">
+                <div class="uk-card-media-top">
+                    <img src="Ver-Image/0.6.png" alt="">
+                </div>
+        </div>
+                <div class="uk-card-body"></div>
+            </div>
+            <div class="uk-card uk-card uk-card-body">
+                <h3>Hello to UIkit!</h3>
+                <p>Atfer use of UIkit. We are working the new About Page, simple and Useful! Hopefully the feedback ins't added yet. We are working so hard and improving the calculator. Thanks for Using my calculator!</p>
+                <h4>~ Valentin (aka Nothings)</h4>
+                <br>
+                <h3>See the changelog</h3>
+                <button uk-toggle="target: #my-id" type="button">Changelog</button>
+
+                <div id="my-id" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                        <h2 class="uk-modal-title">Our Changelog on 0.6</h2>
+                        <p class="uk-modal-text">The major changes are listed:<p>
+                        <ul>
+                            <li><p>Redesinged the About Page to look much better<p></li>
+                        </ul>
+                        <button class="uk-modal-close" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <h3>Settings</h3>
             <br>
             <h3>Language</h3>
             <button><a href="./jp/about-japan.html">Japanese</a></button> <button><a href="./fra/about-fra.html">French</a></button> <button><a href="./esp/about-esp.html">Spanish</a></button>
             <br>
             <br>
             <br>
-            <br>
-        </div>
     </body>
     <script src="connCheck.js"></script>
 </html>

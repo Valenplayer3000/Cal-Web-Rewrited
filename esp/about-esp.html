@@ -42,22 +42,58 @@
     }
     </style>
     <body>
-        <div class="uk-card">
-            <h1>Acerca de Math.js</h1> <h3>Versión Dev (0.5) UIkit versión (3.7.3)</h3>
-            <p>Es por eso que voy a hacer esto sobre la página porque lo olvidé.</p>
+    <div uk-sticky>
+        <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li> <a href="index.html" class="uk-navbar-item uk-logo">Math.js</a></li>
+        </ul>
+    </div>
+</nav>
+    </div>
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('../background/background-image.png');">
+
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Sobre Math.js</h1>
+    </div>
             <br>
-            <p>El Math.js fue hecho utilizando HTML, JavaScript y CSS</p>
             <br>
-            <button><a href="index.html">Back</a></button>
-            <br>
-            <br>
-            <h3>Lenguage</h3>
-            <button><a href="./jp/about-japan.html">Japones</a></button> <button><a href="../about.html">Ingles</a></button> <button><a href="./fra/about-fra.html">Frances</a></button>
-            <br>
-            <br>
-            <br>
-            <br>
+            <h3>Noticias</h3>
+            <div class="uk-child-width-1-2@m" uk-grid>
+           <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+         <div class="uk-card uk-card">
+                <div class="uk-card-media-top">
+                    <img src="../Ver-Image/0.6.png" alt="">
+                </div>
         </div>
+                <div class="uk-card-body"></div>
+            </div>
+            <div class="uk-card uk-card uk-card-body">
+                <h3>¡Hola a UIkit!</h3>
+                <p>Después de usar UIkit. ¡Estamos trabajando en la nueva página Acerca de, simple y útil! Con suerte, los comentarios aún no se han agregado. Estamos trabajando muy duro y mejorando la calculadora. ¡Gracias por usar mi calculadora!</p>
+                <h4>~ Valentin (aka Nothings)</h4>
+                <br>
+                <h3>Ver el registro de cambios</h3>
+                <button uk-toggle="target: #my-id" type="button">Registro de cambios</button>
+
+                <div id="my-id" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                        <h2 class="uk-modal-title">Nuestro registro de cambios en 0.6</h2>
+                        <p class="uk-modal-text">Los principales cambios se enumeran:<p>
+                        <ul>
+                            <li><p>Rediseñamos la página Acerca de para que se vea mucho mejor<p></li>
+                        </ul>
+                        <button class="uk-modal-close" type="button">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <h3>Configuraciones</h3>
+            <br>
+            <h3>Idioma</h3>
+            <button><a href="../jp/about-japan.html">Japonés</a></button> <button><a href="../fra/about-fra.html">Francés</a></button> <button><a href="../esp/about-esp.html">Español</a></button>
+            <br>
+            <br>
+            <br>
     </body>
-    <script src="connCheck.js"></script>
+    <script src="connCheck-esp.js"></script>
 </html>

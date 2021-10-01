@@ -2,12 +2,12 @@
 <html lang="en">
 <title>Math.js | About (Stable)</title>    
     <head>
-        <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
 
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,19 +42,58 @@
     }
     </style>
     <body>
-        <div class="uk-card">
-            <h1>数学について.js</h1> <h3>バージョン開発 (0.5) UIkit バージョン(3.7.3)</h3>
-            <p>私はそれを忘れたので、私はページについてこれを作るつもりです理由です。</p>
+    <div uk-sticky>
+        <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li> <a href="index.html" class="uk-navbar-item uk-logo">Math.js</a></li>
+        </ul>
+    </div>
+</nav>
+    </div>
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('../background/background-image.png');">
 
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">だいたい Math.js</h1>
+    </div>
             <br>
-            <p>数学.jsはHTML、JavaScript、CSSで使用して作られています</p>
             <br>
-            <button><a href="index-japan.html">戻る</a></button>
-            <br>
+            <h3>ニュース</h3>
+            <div class="uk-child-width-1-2@m" uk-grid>
+           <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+         <div class="uk-card uk-card">
+                <div class="uk-card-media-top">
+                    <img src="../Ver-Image/0.6.png" alt="">
+                </div>
+        </div>
+                <div class="uk-card-body"></div>
+            </div>
+            <div class="uk-card uk-card uk-card-body">
+                <h3>UIkitへようこそ！</h3>
+                <p>UIkitの使用後。 シンプルで便利な新しいAboutPageに取り組んでいます！ フィードバックがまだ追加されていないことを願っています。 私たちは一生懸命働いて、計算機を改善しています。 電卓をご利用いただきありがとうございます。</p>
+                <h4>~ Valentin (aka Nothings)</h4>
+                <br>
+                <h3>変更ログを見る</h3>
+                <button uk-toggle="target: #my-id" type="button">変更ログ</button>
+
+                <div id="my-id" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                        <h2 class="uk-modal-title">0.6の変更ログ</h2>
+                        <p class="uk-modal-text">主な変更点は次のとおりです。<p>
+                        <ul>
+                            <li><p>アバウトページを再設計して見栄えを良くしました<p></li>
+                        </ul>
+                        <button class="uk-modal-close" type="button">選ぶ</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <h3>設定</h3>
             <br>
             <h3>言語</h3>
-            <button><a href="../about.html">英語</a></button> <button><a href="../fra/about-fra.html">フランス語</a></button> <button><a href="../esp/about.html">スペイン語</a></button>
-        </div>
+            <button><a href="../jp/about-japan.html">日本</a></button> <button><a href="../fra/about-fra.html">フランス語</a></button> <button><a href="../esp/about-esp.html">スペイン語</a></button>
+            <br>
+            <br>
+            <br>
     </body>
-    <script src="connCheck-japan.js"></script>
+    <script src="connCheck.js"></script>
 </html>
