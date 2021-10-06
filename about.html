@@ -13,34 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
-    <style>
-        body{
-        background-color:rgb(253, 253, 253);
-        text-align: center;
-    }
-    h1{
-        font-family: 'Inter';
-    }
-    p{
-        font-family: 'Inter';
-        font-size: medium;
-        text-align: center;
-        
-    }
-    h4{
-        font-family: 'Inter';
-    }
-    h3{
-        font-family: 'Inter';
-        font-weight: 500;
-        text-align: center;
-    }
-    button{
-        font-family: 'Inter';
-        border: none;
-        border-radius: 2px;
-    }
-    </style>
     <body>
     <div uk-sticky>
         <nav class="uk-navbar-container" uk-navbar>
@@ -59,6 +31,32 @@
             <br>
             <h3>Changelog</h3>
             <div class="uk-child-width-1-2@m" uk-grid>
+                <div class="uk-card uk-card">
+                    <div class="uk-card-media-top">
+                        <img src="./Ver-Image/0.7.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body"></div>
+                </div>
+                <div class="uk-card uk-card-body">
+                    <div class="uk-card-badge uk-label">0.7 Update</div>
+                    <h3 class="uk-card-title">We made a new update for our calculator!</h3>
+                    <p>Yes, this is a new update for about page.</p>
+                    <h4>Check the changelog</h4>
+                    <button class="uk-button-default" uk-toggle="target: #my-id1" type="button">Changelog</button>
+                    <div id="my-id1" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <h2 class="uk-modal-title">Our Changelog on 0.7</h2>
+                            <p class="uk-modal-text">The major changes are listed:<p>
+                            <ul>
+                                <li><p>Updated the about page.<p></li>
+                                <li><p>The translated page will end of support.</p></li>
+                            </ul>
+                            <button class="uk-button-default uk-modal-close" type="button">Close</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="uk-child-width-1-2@m" uk-grid>
            <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
          <div class="uk-card uk-card">
                 <div class="uk-card-media-top">
@@ -70,20 +68,20 @@
             <div class="uk-card uk-card uk-card-body">
             <div class="uk-card-badge uk-label">New Update</div>
                 <h3>Hello to UIkit!</h3>
-                <p>Atfer use of UIkit. We are working the new About Page, simple and Useful! Hopefully the feedback ins't added yet. We are working so hard and improving the calculator. Thanks for Using my calculator!</p>
+                <p>After use of UIkit. We are working the new About Page, simple and Useful! Hopefully the feedback isn't added yet. We are working so hard and improving the calculator. Thanks for using my calculator!</p>
                 <h4>~ Valentin (aka Nothings)</h4>
                 <br>
                 <h3>See the changelog</h3>
-                <button uk-toggle="target: #my-id" type="button">Changelog</button>
+                <button class="uk-button-default" uk-toggle="target: #my-id" type="button">Changelog</button>
 
                 <div id="my-id" uk-modal>
                     <div class="uk-modal-dialog uk-modal-body">
                         <h2 class="uk-modal-title">Our Changelog on 0.6</h2>
                         <p class="uk-modal-text">The major changes are listed:<p>
                         <ul>
-                            <li><p>Redesinged the About Page to look much better<p></li>
+                            <li><p>Redesigned the About Page to look much better<p></li>
                         </ul>
-                        <button class="uk-modal-close" type="button">Close</button>
+                        <button class="uk-button-default uk-modal-close" type="button">Close</button>
                     </div>
                 </div>
             </div>
@@ -93,7 +91,7 @@
                 <h3 class="uk-card-title">Settings</h3>
             </div>
             <div class="uk-card uk-card-hover uk-card-body">
-                <h3 class="uk-card-title">Language</h3>
+                <h3 class="uk-card-title">Language <span uk-icon="world"></span></h3>
             <button><a href="./jp/about-japan.html">Japanese</a></button> <button><a href="./fra/about-fra.html">French</a></button> <button><a href="./esp/about-esp.html">Spanish</a></button>
             </div>
             </div>
