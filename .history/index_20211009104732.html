@@ -10,22 +10,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Opencalc (Stable)</title>
 </head>
 <html>
-    <title>Math.js (Dev)</title>
-    <ul>
-        <li><a class="link" href="https://perezbueno.xyz">Go Back</a></li>
-        <li><p class="webtitle">Linked to Perezbueno.xyz</p></li>
-    </ul>
-<div class="uk-crad-primary">
-    <h3>Math JS</h3>
+    <div class="uk-alert-warning" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <p>Opencalc will redesign! On 0.8!</p>
+    </div>
+        
+    </div>
+    
+    <div class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar">
+            <div class="uk-navbar-left"></div>
+            <a href="" class="uk-navbar-item uk-logo"></a>
+            <div class="uk-navbar-left"><a class="link" href="https://perezbueno.xyz">Go Back</a></div>
+        </div>
+    </div>
+    <div class="uk-grid-divider uk-child-width-1-1@m" uk-gird>
+    <h3>Opencalc</h3>
+    <div class="uk-card uk-crad-defualt uk-card-hover">
     <h3 id = "cal">0</h3>
     <br>
-    <h4>El boton de resultado</h4>
+    </div>
+    <div class="uk-card-hover">
     <button class="uk-button-default text-button" onclick="result()">=</button>
-    <br>
-    <br>
-    <h4>Numeros</h4>
     <button class="uk-button-default text-button" onclick="number1()">1</button>
     <button class="uk-button-default text-button" onclick="number2()">2</button>
     <button class="uk-button-default text-button" onclick="number3()">3</button>
@@ -36,19 +45,15 @@
     <button class="uk-button-default text-button" onclick="number8()">8</button>
     <button class="uk-button-default text-button" onclick="number9()">9</button>
     <button class="uk-button-default text-button" onclick="number0()">0</button>
-    <br>
-    <br>
-    <h4>Operadores</h4>
     <button class="uk-button-default text-button" onclick="sum()">+</button>
     <button class="uk-button-default text-button" onclick="sub()">-</button>
     <button class="uk-button-default text-button" onclick="multi()">*</button>
     <button class="uk-button-default text-button" onclick="div()">/</button>
-    <br>
-    <br>
     <h4>Extras</h4>
-    <button class="uk-button-default text-button" onclick="clr()">Limpiar</button>  <button><a href="about.html">Acerca de</a></button>
-</div>
-</html>
+    <button class="uk-button-default text-button" onclick="clr()">Clear</button><button class="uk-button-default"><a class="uk-link" href="about.html">About</a></button>
+    </div> 
+    </div>
+    </html>
 <!--My Script!-->
 <script>
     var op = "";
@@ -65,9 +70,9 @@
         }else if(mode == 4,op == "/"){
             document.getElementById("cal").innerHTML = num1 / num2;
         }else if(mode == 1){
-            alert("Please tpye the number :(");
+            alert("Please type the number :(");
         }else if (mode == 2){
-            alert("Please tpye the operator :/");
+            alert("Please type the operator :/");
         }else if (mode == 3){
             alert("Select this that number stop pressing this button! >:(");
         }
@@ -224,11 +229,9 @@
         height: 50px;
 }
 
-li a:hover {
-    transition: all 500ms cubic-bezier(0,0,0,1) ; 
-}
+
 .webtitle{
-    margin-left: 100%%;
+    margin-left: 100%;
 }
 li {
     float: left;
@@ -237,27 +240,6 @@ li {
     margin-left: 1%;
 }
     body{
-        background-color:rgb(253, 253, 253);
         text-align: center;
-    }
-    .calc{
-        font-family: 'Inter';
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        height:50px;
-        width: 100px;
-        margin-left: 47%;
-    }
-    h4{
-        font-family: 'Inter';
-    }
-    h3{
-        font-family: 'Inter';
-        font-weight: 500;
-        text-align: center;
-    }
-    button{
-        border:none ;
     }
 </style>

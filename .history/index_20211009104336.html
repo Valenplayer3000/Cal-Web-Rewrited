@@ -17,6 +17,9 @@
         <a class="uk-alert-close" uk-close></a>
         <p>Opencalc will redesign! On 0.8!</p>
     </div>
+        
+    </div>
+    
     <div class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar">
             <div class="uk-navbar-left"></div>
@@ -25,8 +28,11 @@
         </div>
     </div>
     <h3>Opencalc</h3>
+    <div class="uk-card uk-crad-defualt">
     <h3 id = "cal">0</h3>
     <br>
+    </div>
+    <button class="uk-button-default text-button" onclick="result()">=</button>
     <button class="uk-button-default text-button" onclick="number1()">1</button>
     <button class="uk-button-default text-button" onclick="number2()">2</button>
     <button class="uk-button-default text-button" onclick="number3()">3</button>
@@ -37,15 +43,13 @@
     <button class="uk-button-default text-button" onclick="number8()">8</button>
     <button class="uk-button-default text-button" onclick="number9()">9</button>
     <button class="uk-button-default text-button" onclick="number0()">0</button>
-    <br>
     <button class="uk-button-default text-button" onclick="sum()">+</button>
     <button class="uk-button-default text-button" onclick="sub()">-</button>
     <button class="uk-button-default text-button" onclick="multi()">*</button>
     <button class="uk-button-default text-button" onclick="div()">/</button>
-    <button class="uk-button-default text-button" onclick="result()">=</button>
     <h4>Extras</h4>
     <button class="uk-button-default text-button" onclick="clr()">Clear</button><button class="uk-button-default"><a class="uk-link" href="about.html">About</a></button>
-    </html>
+</html>
 <!--My Script!-->
 <script>
     var op = "";
