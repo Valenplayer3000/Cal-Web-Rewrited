@@ -1,7 +1,7 @@
 ![Logo](new-brand.png)
 # Opencalc
  A new, simple, easy to use cacluator
- #### Changelog
+ #### Changelog (look like is outdated due for use of reslease)
 ##### 0.6
 > New About page
 > Using the Connection Check form perezbueno.xyz on Beta
