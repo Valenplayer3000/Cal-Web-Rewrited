@@ -7,11 +7,11 @@
     <body data-theme="light">
         <div class="theme-switcher">  
             <input type="checkbox" id="switcher">  
-            <label for="switcher">switch</label> 
-          </div> 
+            <label for="switcher">switch</label>  
+        </div>  
         <section>
         <div class="container">
-            <h1>About Opencalc</h1> <h3>Version 0.9 (INDEV Branch)</h3>
+            <h1>About Opencalc</h1> <h3>Version 0.9</h3>
             <p>This is why i gonna making this about page because i forgot that.</p>
 
             <br>
@@ -23,37 +23,24 @@
         <section>
             <div class="container">
                 <h1 class="header">News</h1>
-                <br>
                 <div class="container">
                     <h1>We have left the uikit!</h1>
                     <p>After 16 Days of development. I have left with UIKIT. It hard for me due of many codes on 0.8. </p>
                 </div>
-                <br>
-                <div>
-
-                </div>
             </div>
             <div class="container">
                 <h1 class="header">Downloads Center (Why no?)</h1>
-                <br>
                 <div class="container">
                     <h2>All Updates</h2>
-                    <button><a href="https://github.com/Valenplayer3000/opencalc/releases">Releases (Github)</a></button>
+                    <button><a href="https://github.com/Valenplayer3000/opencalc/releases">Downloads</a></button>
                     <br>
                     <br>
-                    <h2>0.9 Updates (Coming Soon)</h2>
-                    <div class="tooltip">
-                      <button class="disabled">Coming Soon</button>
-                      <span class="tooltiptext">0.9 are in INDEV</span>
-                    </div>
-                    
-                    <br>
-                    <br>
-                    <h2>0.8 Updates (Latest Stable Version)</h2>
-                    <button><a href="https://github.com/Valenplayer3000/opencalc/releases/tag/Stable-v.0.8">Download 0.8</a></button>
+                    <h2>0.9 Updates (Coming Soo)</h2>
+                    <button><a href="https://github.com/Valenplayer3000/opencalc/releases">Downloads</a></button>
                 </div>
             </div>
         </section>
+
     </body>
 </html>
 <script>
@@ -129,13 +116,6 @@ padding-top: 60px;
 .p{
   text-align: center;
 }
-.disabled{
-    background-color: var(--color-5);
-    transition: all 500ms cubic-bezier(0,0,0,1);
-}
-.disabled:hover{
-    box-shadow: 0px 0px 10px var(--color-5);
-}
 
 img{
     height: 300px;
@@ -158,14 +138,12 @@ body[data-theme="light"] {
 --color-2: rgb(226, 226, 226);  
 --color-3: white;  
 --color-4: rgb(32, 49, 124);  
---color-5: rgb(25,25,25);
 }  
 body[data-theme="dark"] {  
 --color-1: #1e1f26;  
 --color-2: #292c33;  
 --color-3: rgb(39, 40, 42);  
 --color-4: rgb(97, 108, 255);  
---color-5: rgb(128, 136, 255);
 }  
 section {  
 background-color: var(--color-1);  
@@ -175,13 +153,6 @@ display: flex;
 justify-content: center;  
 align-items: center;  
 }  
-hr.rounded {
-  border-top: 10px solid;
-  border-radius: 999px;
-  color: var(--color-4);
-  height: 5px;
-  
-}
 .container {  
 width: 90%;  
 margin: 0 auto;  
@@ -264,45 +235,5 @@ border: solid white 2px;
 a{
     color: var(--color-3);
     text-decoration: none;
-}
-
-
-
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 150px;
-  max-width: 1000px;
-  background-color: var(--color-4);
-  color: var(--color-3);
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px var(--color-4);
-
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 40%;
-  margin-left: -60px;
-
-  /* Fade in tooltip */
-  opacity: 0;
-  transition: opacity cubic-bezier(0,0,0,1) 0.5s;
-}
-
-
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
 }
 </style>

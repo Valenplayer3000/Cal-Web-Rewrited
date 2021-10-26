@@ -6,9 +6,13 @@
     </head>
     <body data-theme="light">
         <div class="theme-switcher">  
+          <div class="tooltip-bottom">
             <input type="checkbox" id="switcher">  
             <label for="switcher">switch</label> 
-          </div> 
+            <span class="tooltiptext">Switch Theme</span>
+          </div>
+             
+        </div>  
         <section>
         <div class="container">
             <h1>About Opencalc</h1> <h3>Version 0.9 (INDEV Branch)</h3>
@@ -50,7 +54,7 @@
                     <br>
                     <br>
                     <h2>0.8 Updates (Latest Stable Version)</h2>
-                    <button><a href="https://github.com/Valenplayer3000/opencalc/releases/tag/Stable-v.0.8">Download 0.8</a></button>
+                    <button>Download 0.8</button>
                 </div>
             </div>
         </section>
@@ -289,7 +293,7 @@ a{
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  bottom: 100%;
+  top: 100%;
   left: 40%;
   margin-left: -60px;
 

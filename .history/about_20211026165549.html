@@ -7,11 +7,11 @@
     <body data-theme="light">
         <div class="theme-switcher">  
             <input type="checkbox" id="switcher">  
-            <label for="switcher">switch</label> 
-          </div> 
+            <label for="switcher">switch</label>  
+        </div>  
         <section>
         <div class="container">
-            <h1>About Opencalc</h1> <h3>Version 0.9 (INDEV Branch)</h3>
+            <h1>About Opencalc</h1> <h3>Version 0.9</h3>
             <p>This is why i gonna making this about page because i forgot that.</p>
 
             <br>
@@ -29,6 +29,8 @@
                     <p>After 16 Days of development. I have left with UIKIT. It hard for me due of many codes on 0.8. </p>
                 </div>
                 <br>
+                <hr class="rounded">
+                <br>
                 <div>
 
                 </div>
@@ -38,19 +40,19 @@
                 <br>
                 <div class="container">
                     <h2>All Updates</h2>
-                    <button><a href="https://github.com/Valenplayer3000/opencalc/releases">Releases (Github)</a></button>
+                    <button><a href="https://github.com/Valenplayer3000/opencalc/releases">Downloads</a></button>
                     <br>
                     <br>
                     <h2>0.9 Updates (Coming Soon)</h2>
                     <div class="tooltip">
-                      <button class="disabled">Coming Soon</button>
-                      <span class="tooltiptext">0.9 are in INDEV</span>
-                    </div>
+                        <button class="disabled">Coming Soon</button>
+                        <span class="tooltiptext">0.9 are in INDEV</span>
+                      </div>
                     
                     <br>
                     <br>
                     <h2>0.8 Updates (Latest Stable Version)</h2>
-                    <button><a href="https://github.com/Valenplayer3000/opencalc/releases/tag/Stable-v.0.8">Download 0.8</a></button>
+                    <button>Coming Soon</button>
                 </div>
             </div>
         </section>
@@ -82,6 +84,13 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }
 </script>
 <style>
@@ -266,30 +275,97 @@ a{
     text-decoration: none;
 }
 
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
 
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
 
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 /* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 150px;
-  max-width: 1000px;
   background-color: var(--color-4);
   color: var(--color-3);
   text-align: center;
   padding: 5px 0;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px var(--color-4);
 
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  bottom: 100%;
+  bottom: 125%;
   left: 40%;
   margin-left: -60px;
 
@@ -298,7 +374,17 @@ a{
   transition: opacity cubic-bezier(0,0,0,1) 0.5s;
 }
 
-
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-4) transparent transparent transparent;
+}
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
