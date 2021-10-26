@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <div class="warpper1"><h4>A new version of elementary os is out! <a class="button-rainbow" href="https://elementary.io/">Go to elementary.io</a></h5></div>
+<div class="warpper">
+    <h4>Result</h4>
+    <p id = "cal">Put the number here</p>
+    <br>
+    
+    <button onclick="number1()">1</button>
+    <button onclick="number2()">2</button>
+    <button onclick="number3()">3</button>
+    <button onclick="number4()">4</button>
+    <button onclick="number5()">5</button>
+    <button onclick="number6()">6</button>
+    <button onclick="number7()">7</button>
+    <button onclick="number8()">8</button>
+    <button onclick="number9()">9</button>
+    <button onclick="number0()">0</button>
+    <button onclick="sum()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="multi()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="result()">=</button>
+    <br>
+    <button onclick="srqt()">srqt</button>
+    <br>
+    <br>
+    <button onclick="clr()">Clear</button>  <button><a href="about.html">About</a></button>
+    </div>
+</body>
+</html>
+<!--My Script and Title!-->
+<head>
+    <title>Opencalc (INDEV)</title>
+</head>
+<script>
+    const {create, all} = require ('mathjs')
+
+    var op = "";
+    var mode = 1;
+    var num1 = "";
+    var num2 = "";
+    function srqt(){
+        if (mode == 2){
+            document.getElementById("cal").innerHTML = math.srqt(num1);
+        }
+    }
+    function result(){
+        if (mode == 4,op == "+"){
+            document.getElementById("cal").innerHTML = num1 + num2;
+        }else if(mode == 4,op == "-"){
+            document.getElementById("cal").innerHTML = num1 - num2;
+        }else if(mode == 4,op == "*"){
+            document.getElementById("cal").innerHTML = num1 * num2;
+        }else if(mode == 4,op == "/"){
+            document.getElementById("cal").innerHTML = num1 / num2;
+        }
+    }
+    function number1(){
+        if(mode == 1){
+            num1 = 1;
+            mode = 2;
+        }else if(mode == 3){
+            num2 = 1;
+            mode = 4;
+        }
+    }
+    function number2(){
+        if(mode == 1){
+            mode = 2;
+            num1 = 2;
+        }else if (mode == 3){
+            mode = 4;
+            num2 = 2;
+        }
+    }
+    function number3(){
+        if(mode == 1){
+            mode = 2;
+            num1 = 3;
+        }else if (mode == 3){
+            mode = 4;
+            num2 = 3
+        }
+    }
+    function number4(){
+        if(mode == 1){
+            mode = 2;
+            num1 = 4;
+        }else if (mode == 3){
+            mode = 4;
+            num2 = 4
+        }
+    }
+    function number5(){
+        if(mode == 1){
+            mode = 2;
+            num1 = 5;
+        }else if (mode = 3){
+            mode = 4;
+            num2 = 5 
+        }
+    }
+    function number6(){
+        if (mode == 1){
+            mode = 2;
+            num1 = 6;
+        }else if (mode == 3){
+            mode = 4;
+            num2 = 6;
+        }
+    }
+    function number7(){
+        if (mode == 1){
+            mode = 2;
+            num1 = 7;
+        }else if (mode == 3){
+            mode = 4;
+            num2 = 7;
+        }
+    }
+    function number8(){
+        if (mode == 2){
+            mode = 2;
+            num1 = 8;
+        }else if (mode == 3){
+            mode = 4;
+            num2 = 8;
+        }
+    }
+    function number9(){
+        if (mode == 1){
+            mode = 2;
+            num1 = 9;
+        }else if (mode == 3){
+            mode = 4;
+            num2 = 9;
+        }
+    }
+    function number0(){
+        if (mode == 1){
+            mode = 2;
+            num1 = 0;
+        }else if (mode == 3){
+            mode = 4;
+            num2 = 0;
+        }
+    }
+    function clr(){
+        if (mode == 1){
+            alert("Select a Number! >:(");
+        }else if (mode == 2){
+            mode = 1;
+            num1 = "";
+            num2 = "";
+            op = "";
+            document.getElementById("cal").innerHTML = " ";
+        }else if (mode == 3){
+            mode = 1;
+            num1 = "";
+            num2 = "";
+            op = "";
+            document.getElementById("cal").innerHTML = " ";
+        }else if (mode == 4){
+            mode = 1;
+            num1 = "";
+            num2 = "";
+            op = "";
+            document.getElementById("cal").innerHTML = " ";
+        }
+    }
+    function sum(){
+        if(mode == 2){
+            op = "+";
+            mode = 3; 
+        }
+    }
+    function sub(){
+        if(mode == 2){
+            op = "-";
+            mode = 3;
+        }
+    }
+    function multi(){
+        if(mode == 2){
+            op = "*";
+            mode = "3";
+        }
+    }
+    function div(){
+        if (mode == 2){
+            op = "/";
+            mode = "3";
+        }
+    }
+</script>
+<!--My Style!-->
+<style>
+    body{
+        background-color:mediumblue;
+    }
+    p{
+        font-family: monospace;
+        font-size: medium;
+        font-style: italic;
+        
+    }
+    h4{
+        font-family: monospace;
+    }
+    button{
+        font-family: monospace;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 2px 2px 1px rgba(0,0,0, 0.2);
+
+    }
+    .warpper{
+            width: 1000px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:rgb(219, 219, 219);
+            box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border-radius: 0px;
+            animation-name: createBox;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(0.53, 0.02, 0.1, 1);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+            
+        @keyframes createBox{
+    from{
+        height:0px;
+        width: 0px;
+
+    }
+    to{
+        height: 500px;
+        width: 1000px;
+    }
+        }
+        .warpper1{
+            width: 500px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:rgb(219, 219, 219);
+            box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border-radius: 0px;
+            animation-name: Move;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(0.53, 0.02, 0.1, 1);
+            margin-top: -22%;
+        }
+        @keyframes Move {
+            from{
+                height: 0px;
+                width: 0px;
+                margin-top: 0%;
+            }
+            to{
+                height: 50px;
+                width: 500px;
+                margin-top: -22%;
+            }
+            
+        }
+        .button-rainbow{
+            text-align: center;
+            color: #333333;
+            animation-name: rainbow;
+            animation-duration: 60s;
+            animation-timing-function: linear;
+
+        }
+        @keyframes rainbow{
+            0%{color: #c6262e;}
+            5%{color: #f37329;}
+            10%{color: #f9c440;}
+            15%{color: #68b723;}
+            20%{color: #28bca3;}
+            25%{color: #3689e6;}
+            30%{color: #a56de2;}
+            35%{color: #de3e80;}
+            40%{color: #715344;}
+            45%{color: #abacae;}
+            50%{color: #485a6c;}
+            55%{color: #000000;}
+
+        }
+
+</style>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body{
+            background-color: mediumblue;
+        }
+        .warpper{
+            width: 1000px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(219, 219, 219);
+            box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border-radius: 0px;
+            flex-shrink: inherit;
+            animation-name: createBox;
+            animation-duration: 1.5s;
+            animation-timing-function:cubic-bezier(0.53, 0.02, 0.1, 1);
+            
+        }
+        @keyframes createBox{
+    from{
+        height:0px;
+        width: 0px;
+
+    }
+    to{
+        height: 500px;
+        width: 1000px;
+    }
+}
+
+        h1{
+            font-family: monospace;
+            text-align: center;
+        }
+        p{
+            font-family: monospace;
+        }
+        h3{
+            font-family: monospace;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: monospace;
+        }
+        button{
+            border: none;
+            box-shadow: 2px 2px 1px rgba(0,0,0, 0.2);
+            border-radius: 0px;
+        }
+        .warpper1{
+            width: 500px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:rgb(219, 219, 219);
+            box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border-radius: 0px;
+            animation-name: Move;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(0.53, 0.02, 0.1, 1);
+            margin-top: -22%;
+        }
+        @keyframes Move {
+            from{
+                height: 0px;
+                width: 0px;
+                margin-top: 0%;
+            }
+            to{
+                height: 50px;
+                width: 500px;
+                margin-top: -22%;
+            }
+            
+        }
+        .button-rainbow{
+            text-align: center;
+            color: #333333;
+            animation-name: rainbow;
+            animation-duration: 60s;
+            animation-timing-function: linear;
+
+        }
+        @keyframes rainbow{
+            0%{color: #c6262e;}
+            5%{color: #f37329;}
+            10%{color: #f9c440;}
+            15%{color: #68b723;}
+            20%{color: #28bca3;}
+            25%{color: #3689e6;}
+            30%{color: #a56de2;}
+            35%{color: #de3e80;}
+            40%{color: #715344;}
+            45%{color: #abacae;}
+            50%{color: #485a6c;}
+            55%{color: #000000;}
+
+        }
+    </style>
+    <body>
+        <div class="warpper1"><h4>A new version of elementary os is out! <a class="button-rainbow" href="https://elementary.io/">Go to elementary.io</a></h5></div>
+        <div class="warpper">
+            <h1>About M̶a̶t̶h̶.̶j̶s̶ Opencalc</h1> <h3>Version 0.3.alpha</h3>
+            <p>This is why i gonna making this about page because i forgot that.</p>
+            <h1>OLD VERSION (and in-DEV)</h1>
+            <p>sometime this brach will have new feature, but and B U G what break the Opencalc</p>
+            <br>
+            <p>The math.js are made using with HTML, JavaScript and ₗᵢₜₜₗₑ CSS</p>
+            <br>
+            <button><a href="index.html">Back</a></button>
+        </div>
+    </body>
+</html>
